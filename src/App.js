@@ -9,26 +9,24 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
-function App() {
-  return (
-    <>
-      <GlobalStyle />
-      <Router>
-        <Switch>
-          <Route path="/search">
-            <div>
-              Search
-            </div>
-          </Route>
-          <Route path="/">
-            <div>
-              Homepage
-            </div>
-          </Route>
-        </Switch>
-      </Router>
-    </>
-  );
-}
+const App = () => (
+  <>
+    <GlobalStyle />
+    <Router>
+      <Switch>
+        <Route path="/search">
+          <div>
+            Search
+          </div>
+        </Route>
+        <Route path="/">
+          <div>
+            Homepage
+          </div>
+        </Route>
+      </Switch>
+    </Router>
+  </>
+);
 
 export default App;
