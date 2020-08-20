@@ -1,18 +1,13 @@
 import React from 'react';
-import 'normalize.css';
-import { createGlobalStyle } from 'styled-components/macro';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-
-const GlobalStyle = createGlobalStyle`
-  body {
-    font-size: 10px;
-  }
-`;
+import { ThemeProvider } from 'styled-components';
+import GlobalStyle from './GlobalStyles';
+import theme from './theme';
 
 const App = () => (
-  <>
-    <GlobalStyle />
+  <ThemeProvider theme={theme}>
     <Router>
+      <GlobalStyle />
       <Switch>
         <Route path="/search">
           <div>
@@ -26,7 +21,7 @@ const App = () => (
         </Route>
       </Switch>
     </Router>
-  </>
+  </ThemeProvider>
 );
 
 export default App;
