@@ -1,11 +1,21 @@
 import React from 'react';
 import 'normalize.css';
+import { createGlobalStyle } from 'styled-components/macro';
+
+const GlobalStyle = createGlobalStyle`
+  body {
+    font-size: 10px;
+  }
+`;
 
 function App() {
   return (
-    <div>
-      App Placeholder
-    </div>
+    <>
+      <GlobalStyle />
+      <div>
+        App Placeholder
+      </div>
+    </>
   );
 }
 
