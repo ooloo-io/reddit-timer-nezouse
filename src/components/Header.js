@@ -6,46 +6,18 @@ import { ReactComponent as Logo } from '../images/logo.svg';
 const HeaderContainer = styled.header`
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin: 3.2rem 8rem;
-`;
-
-const NavContainer = styled.nav`
-  margin: auto 0;
-`;
-
-const NavList = styled.ul`
-  display: flex;
-  gap: 2.6rem;
-  margin: 0; 
-  padding: 0; 
 
   font-size: ${(props) => props.theme.font.size.regular};
 `;
 
-const NavItem = styled.li`
-  list-style-type: none;
-`;
-
 const NavLink = styled(Link)`
   text-decoration: none;
+  margin-left: 2.6rem;
+
   color: ${(props) => props.theme.color.brownishGrey};
 `;
-
-const Navigation = () => (
-  <NavContainer>
-    <NavList>
-      <NavItem>
-        <NavLink to="/search/javascript">Search</NavLink>
-      </NavItem>
-      <NavItem>
-        <NavLink to="/#how-it-works">How it works</NavLink>
-      </NavItem>
-      <NavItem>
-        <NavLink to="/#about">About</NavLink>
-      </NavItem>
-    </NavList>
-  </NavContainer>
-);
 
 const SvgIcon = styled(Logo)`
   display: block;
@@ -56,7 +28,11 @@ const Header = () => (
     <Link to="/">
       <SvgIcon />
     </Link>
-    <Navigation />
+    <nav>
+      <NavLink to="/search/javascript">Search</NavLink>
+      <NavLink to="/#how-it-works">How it works</NavLink>
+      <NavLink to="/#about">About</NavLink>
+    </nav>
   </HeaderContainer>
 );
 
