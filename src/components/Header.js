@@ -7,8 +7,9 @@ const HeaderContainer = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 3.2rem 8rem;
+  margin: auto 8rem;
 
+  height: ${(props) => props.theme.size.headerHeight};
   font-size: ${(props) => props.theme.font.size.regular};
 `;
 

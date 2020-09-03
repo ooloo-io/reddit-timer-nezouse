@@ -9,8 +9,9 @@ const FooterContainer = styled.footer`
   width: 100%;
   max-width: 98rem;
   padding: 0 2rem;
-  margin: 4rem auto;
+  margin: 0 auto;
 
+  height: ${(props) => props.theme.size.footerHeight};
   font-size: ${(props) => props.theme.font.size.small};
 `;
 

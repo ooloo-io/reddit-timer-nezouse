@@ -3,6 +3,10 @@ const theme = {
     text: '#93918f',
     brownishGrey: '#636363',
   },
+  size: {
+    headerHeight: '10rem',
+    footerHeight: '10rem',
+  },
   font: {
     family: {
       default: '"Montserrat", sans-serif',
