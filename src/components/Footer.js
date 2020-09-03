@@ -6,7 +6,10 @@ import { ReactComponent as Icon } from '../images/footerIcon.svg';
 const FooterContainer = styled.footer`
   display: flex;
   align-items: center;
-  margin: 4rem 25rem;
+  width: 100%;
+  max-width: 98rem;
+  padding: 0 2rem;
+  margin: 4rem auto;
 
   font-size: ${(props) => props.theme.font.size.small};
 `;
