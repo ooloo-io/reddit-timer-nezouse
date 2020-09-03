@@ -1,6 +1,7 @@
 const theme = {
   color: {
     text: '#93918f',
+    brownishGrey: '#636363',
   },
   font: {
     family: {
@@ -9,6 +10,7 @@ const theme = {
     },
     size: {
       default: '10px',
+      regular: '1.6rem',
     },
     lineHeight: {
       default: 1.69,

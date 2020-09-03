@@ -12,14 +12,10 @@ const App = () => (
       <Header />
       <Switch>
         <Route path="/search">
-          <div>
-            Search
-          </div>
+          <div>Search</div>
         </Route>
         <Route path="/">
-          <div>
-            Homepage
-          </div>
+          <div>Homepage</div>
         </Route>
       </Switch>
     </Router>
