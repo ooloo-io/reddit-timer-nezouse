@@ -5,7 +5,6 @@ import { ReactComponent as Icon } from '../images/footerIcon.svg';
 
 const FooterContainer = styled.footer`
   display: flex;
-  justify-content: space-between;
   align-items: center;
   margin: 4rem 25rem;
 
@@ -18,11 +17,15 @@ const SvgIcon = styled(Icon)`
 
 const linkStyles = css`
   text-decoration: none;
+  flex: 1;
   color: ${(props) => props.theme.color.brownishGrey};
 `;
 
-const FooterLocalLink = styled(Link)`${linkStyles}`;
 const FooterExternalLink = styled.a`${linkStyles}`;
+const FooterLocalLink = styled(Link)`
+  ${linkStyles}
+  text-align: right;  
+`;
 
 const Footer = () => (
   <FooterContainer>
