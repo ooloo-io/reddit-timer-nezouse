@@ -34,7 +34,7 @@ const Navigation = () => (
   <NavContainer>
     <NavList>
       <NavItem>
-        <NavLink to="/search?q=javascript">Search</NavLink>
+        <NavLink to="/search/javascript">Search</NavLink>
       </NavItem>
       <NavItem>
         <NavLink to="/#how-it-works">How it works</NavLink>
