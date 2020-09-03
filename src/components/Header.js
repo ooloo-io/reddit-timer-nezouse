@@ -53,6 +53,7 @@ const SvgIcon = styled.svg`
 const LogoIcon = () => (
   <Link to="/">
     <SvgIcon xmlns="http://www.w3.org/2000/svg" width="150px" height="36px">
+      logo.svg
       <g fill="none" fillRule="evenodd">
         <ellipse cx="83.118" cy="10.562" fill="#FF4500" rx="1.951" ry="1.938" />
         <ellipse cx="104.939" cy="10.562" fill="#FF4500" rx="1.951" ry="1.938" />
