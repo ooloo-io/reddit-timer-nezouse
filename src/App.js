@@ -14,6 +14,7 @@ const App = () => (
       <Route path="/search">
         <div>Search page</div>
       </Route>
+      <Route path="/terms">Terms page</Route>
       <Route path="/">
         <div>Homepage</div>
       </Route>
