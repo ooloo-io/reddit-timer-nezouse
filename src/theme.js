@@ -10,6 +10,7 @@ const theme = {
     },
     size: {
       default: '10px',
+      small: '1.4rem',
       regular: '1.6rem',
     },
     lineHeight: {

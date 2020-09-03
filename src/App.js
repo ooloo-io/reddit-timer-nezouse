@@ -4,6 +4,7 @@ import { ThemeProvider } from 'styled-components';
 import GlobalStyle from './GlobalStyles';
 import theme from './theme';
 import Header from './components/Header';
+import Footer from './components/Footer';
 
 const App = () => (
   <ThemeProvider theme={theme}>
@@ -17,6 +18,7 @@ const App = () => (
         <div>Homepage</div>
       </Route>
     </Switch>
+    <Footer />
   </ThemeProvider>
 );
 
